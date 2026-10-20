@@ -1,0 +1,15 @@
+:root { font-family: system-ui, sans-serif; color-scheme: light dark; }
+body { margin: 0; background: linear-gradient(160deg, #4facfe, #00f2fe); min-height: 100vh; }
+main { max-width: 800px; margin: 0 auto; padding: 24px; }
+h1, h2 { color: #fff; }
+form { display: flex; gap: 8px; margin-bottom: 12px; }
+input, select, button { padding: 10px; border-radius: 8px; border: 0; font-size: 1rem; }
+input { flex: 1; }
+button { background: #1d3557; color: #fff; cursor: pointer; }
+#status { color: #fff; min-height: 1.2em; }
+section { background: rgba(255,255,255,.2); border-radius: 16px; padding: 16px; margin-bottom: 16px; color: #fff; }
+.big { font-size: 3rem; }
+.details { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px; }
+.days { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 8px; }
+.day { background: rgba(255,255,255,.25); border-radius: 12px; padding: 10px; text-align: center; }
+.day .i { font-size: 1.8rem; }

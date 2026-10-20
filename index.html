@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard del Clima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>🌤️ Dashboard del Clima</h1>
+    <form id="search-form">
+      <input id="city" type="text" placeholder="Buscar ciudad..." required>
+      <select id="units">
+        <option value="celsius">°C</option>
+        <option value="fahrenheit">°F</option>
+      </select>
+      <button type="submit">Buscar</button>
+    </form>
+    <p id="status" role="status"></p>
+    <section id="current" hidden>
+      <h2 id="place"></h2>
+      <div class="big"><span id="icon"></span> <span id="temp"></span></div>
+      <p id="desc"></p>
+      <ul class="details">
+        <li>Sensación: <b id="feels"></b></li>
+        <li>Humedad: <b id="humidity"></b></li>
+        <li>Viento: <b id="wind"></b></li>
+        <li>Precipitación: <b id="precip"></b></li>
+      </ul>
+    </section>
+    <section id="forecast" hidden>
+      <h2>Pronóstico 7 días</h2>
+      <div id="days" class="days"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
